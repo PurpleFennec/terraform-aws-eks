@@ -228,6 +228,12 @@ variable "cloudwatch_log_group_kms_key_id" {
   default     = null
 }
 
+variable "cloudwatch_log_group_keep_on_delete" {
+  description = "Determines whether or not the log group is kept after cluster deletion"
+  type        = bool
+  default     = false
+}
+
 ################################################################################
 # Cluster Security Group
 ################################################################################
